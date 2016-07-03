@@ -92,7 +92,7 @@ namespace SAI_NeuralNetworks
         }
 
 
-        public double CalcError(IList<double> Y) //вычисление ошибки, вычисляется она как сумма квадратов расстояний от выходных сигналов сети до их требуемых значений. 
+        public double CalcError(IList<double> Y) //вычисление ошибки, вычисляется она как сумма квадратов разницы между выходными сигналами сети и их требуемыхми значениями. 
         {
             double kErr = 0;
             for (int i = 0; i < Y.Count; i++)
